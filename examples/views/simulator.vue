@@ -2,7 +2,7 @@
   <div class="simulator">
     <div class="group">
       <div class="iframe">
-        <iframe src="" frameborder="0"></iframe>
+        <iframe :src="'/show'+path" frameborder="0"></iframe>
       </div>
     </div>
   </div>
@@ -10,7 +10,17 @@
 
 <script>
 export default {
-  name: 'simulator'
+  name: 'simulator',
+  data() {
+    return {
+      path: ''
+    }
+  },
+  watch: {
+    '$route.path'(val) {
+      this.path = val;
+    }
+  }
 }
 </script>
 
@@ -20,24 +30,27 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   .group {
     width: 330px;
     height: 600px;
+    min-height: 600px;
+    max-height: 600px;
     background-image: url('../assets/iphoneX.38c8778.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 98%;
     box-sizing: border-box;
     margin-top: 10px;
+    position: relative;
     .iframe {
+      min-height: 400px;
       position: absolute;
-      top: 66px;
-      left: 55px;
-      right: 57px;
-      bottom: 22px;
+      top: 58px;
+      left: 21px;
+      right: 23px;
+      bottom: 35px;
       overflow: hidden;
-      border-radius: 5px 5px 55px 55px;
+      border-radius: 5px 5px 15px 15px;
       border: 1px solid #edf0f4;
       border-top: none;
       background-color: #edf0f4;

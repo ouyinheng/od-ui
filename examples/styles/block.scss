@@ -1,8 +1,11 @@
 pre {
   margin: 0;
+  code {
+    display: block;
+    padding: 18px 10px 18px 20px;
+  }
 }
 code {
-  display: block;
   font-size: 13px;
   overflow-x: auto;
   font-weight: 400;
@@ -13,8 +16,9 @@ code {
   word-break: break-all;
   white-space: pre-wrap;
   color: #455a64;
-  padding: 18px 10px 18px 20px;
   background-color: #f1f4f8;
+  padding: 2px 5px;
+  margin-left: 1px;
   font-family: Source Code Pro,Monaco,Inconsolata,monospace;
 }
 .hljs{
