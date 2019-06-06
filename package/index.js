@@ -1,5 +1,5 @@
-import Button from './button'
-
+import Button from './button';
+import './theme/index.scss';
 const components = {
   Button
 }

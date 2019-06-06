@@ -1,5 +1,10 @@
+html,body {
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-weight: 400;
+}
 pre {
-  margin: 0;
+  margin: 10px 0;
+  line-height: 1.75rem;
   code {
     display: block;
     padding: 18px 10px 18px 20px;
@@ -21,7 +26,15 @@ code {
   margin-left: 1px;
   font-family: Source Code Pro,Monaco,Inconsolata,monospace;
 }
+p {
+  code {
+    background-color: #fff5f5;
+    color: #ff502c;
+    padding: 5px;
+  }
+}
 .hljs{
+  padding: 18px 15px 12px;
   &-attr {
     color: #455a64;
   }
@@ -30,5 +43,22 @@ code {
   }
 }
 .hljs-built_in, .hljs-doctag, .hljs-keyword, .hljs-name, .hljs-section, .hljs-selector-class, .hljs-selector-id, .hljs-selector-tag, .hljs-strong, .hljs-tag, .hljs-title, .hljs-type {
-  color: #0079f3;
+  color: #409EFF;
+  font-family: Menlo,Monaco,Consolas,Courier,monospace;
+}
+.od-doc-content {
+  h2 {
+    margin-bottom: 50px;
+  }
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  a {
+    color: #409eff;
+  }
 }

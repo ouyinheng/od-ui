@@ -24,7 +24,7 @@ import odaside from '@/views/odaside.vue'
 export default {
   name: 'home',
   components: {
-    'simulator': simulator,
+    // 'simulator': simulator,
     'od-aside': odaside,
     'od-nav': odnav
   }
@@ -37,6 +37,9 @@ header {
   height: 60px;
   border-bottom: 1px solid gainsboro;
 }
+.article {
+  
+}
 .od-doc-content {
   position: absolute;
   top: 60px;
@@ -45,6 +48,7 @@ header {
   bottom: 0;
   padding: 10px 40px;
   box-sizing: border-box;
+  overflow: auto;
 }
 .od-doc-simulator {
   width: 400px;

@@ -1,8 +1,20 @@
 {
   "开发指南": [{
     "name": "giud",
-    "path": "/giud",
+    "path": "/",
     "desc": "介绍"
+  },{
+    "name": "installation",
+    "path": "/installation",
+    "desc": "安装"
+  },{
+    "name": "quickstart",
+    "path": "/quickstart",
+    "desc": "快速上手"
+  },{
+    "name": "transition",
+    "path": "/transition",
+    "desc": "内置过渡动画"
   }],
   "组件": [{
     "desc": "基础组件",
