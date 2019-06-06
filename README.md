@@ -1,6 +1,6 @@
-# oyh-ui
+# od-ui
 <p align="center">
-    <img alt="logo" src="./examples/assets/logo/png" width="120" height="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="./examples/assets/logo.png" width="120" height="120" style="margin-bottom: 10px;">
 </p>
 <h3 align="center" style="margin: 30px 0 35px;">Mobile UI Components built on Vue</h3>
 
