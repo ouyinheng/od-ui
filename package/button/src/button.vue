@@ -8,13 +8,14 @@
 
 <script>
 export default {
-  name: 'od-button'
+  name: 'OdButton'
 }
 </script>
 
 <style lang="scss" scoped>
 .od-button {
   font-size: 1rem;
+  background-color: pink;
 }
 </style>
 

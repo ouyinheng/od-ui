@@ -9,7 +9,7 @@
         <router-view/>
       </section>
       <aside class="od-doc-simulator">
-        <simulator></simulator>
+        <!-- <simulator></simulator> -->
       </aside>
     </article>
   </div>

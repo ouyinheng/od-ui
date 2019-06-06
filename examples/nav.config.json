@@ -1,22 +1,16 @@
 {
-  "开发指南": [
-    {
-      "name": "giud",
-      "path": "/giud",
-      "desc": "介绍"
-    }
-  ],
-  "组件": [
-    {
-      "desc": "基础组件",
-      "path": "/component",
-      "items": [
-        {
-          "desc": "Button 按钮",
-          "name": "button",
-          "path": "/button"
-        }
-      ]
-    }
-  ]
+  "开发指南": [{
+    "name": "giud",
+    "path": "/giud",
+    "desc": "介绍"
+  }],
+  "组件": [{
+    "desc": "基础组件",
+    "path": "/component",
+    "items": [{
+      "desc": "Button 按钮",
+      "name": "button",
+      "path": "/button"
+    }]
+  }]
 }
