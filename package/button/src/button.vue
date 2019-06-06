@@ -1,15 +1,17 @@
 <template>
-    <button :class="{
-      'od-button': true
+  <button :class="{
+      'mat-button': true
     }">
-      <slot></slot>
-    </button>
+    <span class="mat-button-wrapper"><slot></slot></span>
+    <span class="mat-button-ripple mat-ripple"></span>
+    <span class="mat-button-focus-overlay"></span>
+  </button>
 </template>
 
 <script>
 export default {
-  name: 'OdButton'
-}
+  name: "OdButton"
+};
 </script>
 
 <style lang="scss" scoped>

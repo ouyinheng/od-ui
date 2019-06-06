@@ -29,10 +29,19 @@ addComponent(routes)
 
 export default new Router({
   routes: [{
-      path: '/',
-      name: 'home',
-      component: Home,
-      children: routes
+    path: '/',
+    name: 'home',
+    component: Home,
+    children: routes
+  }, {
+    path: '/show',
+    name: 'show',
+    component: () => import( /* webpackChunkName: "show" */ './views/show.vue'),
+    children: [{
+      path: '/show/button',
+      name: 'button',
+      component: () => import( /* webpackChunkName: "show" */ './views/components/button.vue'),
+    }]
   }]
 })
 // export default new Router({

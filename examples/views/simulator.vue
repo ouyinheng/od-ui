@@ -2,7 +2,7 @@
   <div class="simulator">
     <div class="group">
       <div class="iframe">
-        <iframe :src="'/show'+path" frameborder="0"></iframe>
+        <iframe :src="local+path" frameborder="0"></iframe>
       </div>
     </div>
   </div>
@@ -16,9 +16,14 @@ export default {
       path: ''
     }
   },
+  computed:{
+    local(){
+      return window.location.origin+'/#'
+    }
+  },
   watch: {
     '$route.path'(val) {
-      this.path = val;
+      this.path = '/show'+val;
     }
   }
 }

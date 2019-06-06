@@ -9,7 +9,7 @@
         <router-view/>
       </section>
       <aside class="od-doc-simulator">
-        <!-- <simulator></simulator> -->
+        <simulator></simulator>
       </aside>
     </article>
   </div>
@@ -24,7 +24,7 @@ import odaside from '@/views/odaside.vue'
 export default {
   name: 'home',
   components: {
-    // 'simulator': simulator,
+    'simulator': simulator,
     'od-aside': odaside,
     'od-nav': odnav
   }
