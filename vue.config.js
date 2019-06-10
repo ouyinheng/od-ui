@@ -64,7 +64,7 @@ module.exports = {
       // chunks: ['chunk-vendors', 'chunk-common', 'index']
     }
   },
-  outputDir: './dist',
+  outputDir: './docs',
   productionSourceMap: false,
   chainWebpack: (config)=>{
     config.resolve.alias
