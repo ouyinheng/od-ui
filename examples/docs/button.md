@@ -20,7 +20,6 @@ Vue.use(Button);
 <od-button type="warning">警告按钮</od-button>
 <od-button type="danger">危险按钮</od-button>
 ```
-
 #### 水波纹
 
 通过 `ripple` 属性将按钮设置为水波纹按钮。
@@ -47,6 +46,7 @@ Vue.use(Button);
 <od-button type="warning" shadow round>警告按钮</od-button>
 <od-button type="danger" shadow round>危险按钮</od-button>
 ```
+
 #### 块级
 
 通过 `block` 属性将按钮设置为块级按钮。

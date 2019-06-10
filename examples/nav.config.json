@@ -1,9 +1,5 @@
 {
   "开发指南": [{
-    "name": "giud",
-    "path": "/",
-    "desc": "介绍"
-  },{
     "name": "installation",
     "path": "/installation",
     "desc": "安装"

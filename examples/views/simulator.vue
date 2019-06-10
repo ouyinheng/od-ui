@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     local() {
-      return window.location.origin + "/#";
+      return window.location.origin.indexOf('ouyinheng')!==-1 ? window.location.origin + "/od-ui/dist/#" :  window.location.origin + "/#" ;
     }
   },
   watch: {
