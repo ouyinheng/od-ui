@@ -20,6 +20,10 @@
     "desc": "基础组件",
     "path": "/component",
     "items": [{
+      "desc": "icon",
+      "name": "icon",
+      "path": "/icon"
+    }, {
       "desc": "Button 按钮",
       "name": "button",
       "path": "/button"

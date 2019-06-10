@@ -1,0 +1,41 @@
+@mixin button() {
+  border: none;
+  outline: none;
+  color: $--color-white;
+  @include utils-user-select(none);
+}
+@mixin shadow {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.od-button {
+  @include button;
+  @extend .p-2;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.od-shadow {
+  @include shadow();
+  &:active {
+    cursor: pointer;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+    transition: all .3s;
+  }
+}
+.od-icon {
+  // background-color: pink;
+}
+.od-round {
+  border-radius: 5px;
+}
+.od-block {
+  width: 100%;
+}
+@each $type,$var in (default: $--color-white,primary:$--color-primary, success:$--color-success, warning:$--color-warning, danger:$--color-danger, info:$--color-info) {
+  .od-button--#{$type} {
+    background-color: $var;
+    @if $type==default {
+      color: $--color-black;
+    }
+  }
+}

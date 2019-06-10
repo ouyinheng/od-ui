@@ -4,7 +4,9 @@
       <od-nav></od-nav>
     </header>
     <article>
-      <od-aside></od-aside>
+      <div class="od-side">
+        <od-aside></od-aside>
+      </div>
       <section class="od-doc-content">
         <router-view/>
       </section>
@@ -56,6 +58,19 @@ header {
   right: 0;
   bottom: 0;
   top: 60px;
+}
+@media screen and (max-width: 768px){
+  header,.od-doc-content,.od-side {
+    display: none;
+  }
+  .od-doc-simulator {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 </style>
 

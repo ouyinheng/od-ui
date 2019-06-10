@@ -1,0 +1,25 @@
+%flex {
+  display: flex;
+}
+
+.flex {
+  @extend %flex;
+}
+
+.around {
+  @extend %flex;
+  justify-content: space-around;
+}
+
+.between {
+  @extend %flex;
+  justify-content: space-between;
+}
+
+.-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

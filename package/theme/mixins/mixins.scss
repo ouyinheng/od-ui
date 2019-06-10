@@ -1,0 +1,28 @@
+@import '../common/var.scss';
+
+@for $var from 1 to 10 {
+  @each $key, $val in $space {
+    .#{$key}-#{$var} {
+      #{$val}: $var*5px;
+    }
+  }
+  .px-#{$var} {
+    padding: 0 $var*5px;
+  }
+  .mx-#{$var} {
+    margin: 0 $var*5px;
+  }
+  .py-#{$var} {
+    padding: $var*5px 0;
+  }
+  .my-#{$var} {
+    margin: $var*5px 0;
+  }
+}
+
+
+@each $key, $val in $fontsize {
+  .font-#{$key} {
+    font-size: $val;
+  }
+}

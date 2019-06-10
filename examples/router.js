@@ -38,6 +38,10 @@ export default new Router({
     name: 'show',
     component: () => import( /* webpackChunkName: "show" */ './views/show.vue'),
     children: [{
+      path: '/show/icon',
+      name: 'button',
+      component: () => import( /* webpackChunkName: "show" */ './views/components/icon.vue'),
+    }, {
       path: '/show/button',
       name: 'button',
       component: () => import( /* webpackChunkName: "show" */ './views/components/button.vue'),
