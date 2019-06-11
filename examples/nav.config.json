@@ -20,9 +20,13 @@
       "name": "icon",
       "path": "/icon"
     }, {
-      "desc": "Button 按钮",
+      "desc": "button",
       "name": "button",
       "path": "/button"
+    }, {
+      "desc": "toast",
+      "name": "toast",
+      "path": "/toast"
     }]
   }]
 }

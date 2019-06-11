@@ -70,6 +70,7 @@ export default {
   },
   methods: {
     showRipple(e) {
+      this.$emit('click', e)
       if (!this.ripple) return;
       const btn = this.$refs.btn;
       const span = document.createElement("span");

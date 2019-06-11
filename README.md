@@ -21,3 +21,5 @@ import 'od-ui/lib/od-ui.css';
 
 Vue.use(OdUI);
 ```
+<a href="https://github.com/ouyinheng/od-ui" target="_black">github</a>
+<a href="https://ouyinheng.github.io/od-ui/dist/#/" target="_black">文档</a>

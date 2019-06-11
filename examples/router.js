@@ -39,12 +39,20 @@ export default new Router({
     component: () => import( /* webpackChunkName: "show" */ './views/show.vue'),
     children: [{
       path: '/show/icon',
-      name: 'button',
-      component: () => import( /* webpackChunkName: "show" */ './views/components/icon.vue'),
+      name: 'icon',
+      component: () => import( /* webpackChunkName: "show" */ './views/components/icon.vue')
     }, {
       path: '/show/button',
       name: 'button',
-      component: () => import( /* webpackChunkName: "show" */ './views/components/button.vue'),
+      component: () => import( /* webpackChunkName: "show" */ './views/components/button.vue')
+    }, {
+      path: '/show/transition',
+      name: 'transition',
+      component: () => import( /* webpackChunkName: "show" */ './views/components/transition.vue')
+    }, {
+      path: '/show/toast',
+      name: 'toast',
+      component: () => import( /* webpackChunkName: "show" */ './views/components/toast.vue')
     }]
   }]
 })

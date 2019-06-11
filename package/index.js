@@ -1,15 +1,16 @@
 import Button from './button';
+import Toast from './toast';
 import './theme/index.scss';
-const components = {
+const components = [
   Button
-}
+]
 
 const install = function (Vue) {
-  if (install.installed) return
-  // components.map(component => Vue.component(component.name, component))
-  Object.keys(components).forEach(key => {
-    Vue.component(components[key].name, components[key])
+  // if (install.installed) return
+  components.forEach(component => {
+    Vue.component(component.name, component)
   })
+  Vue.prototype.$toast = Toast;
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -18,5 +19,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Button
+  Button,
+  Toast
 }
