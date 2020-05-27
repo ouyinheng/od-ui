@@ -1,6 +1,6 @@
 {
   "name": "od-ui",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "private": false,
   "description": "基于 Vue 的移动端组件库",
   "main": "lib/od-ui.umd.min.js",
