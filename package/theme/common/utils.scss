@@ -4,3 +4,13 @@
   -ms-user-select: $value;
   user-select: $value;
 }
+.od-model {
+	background: rgba(0, 0, 0, .3);
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 101;
+	transition: all 1s;
+}

@@ -76,10 +76,21 @@ export default new Router({
         },
         {
           path: "/show/drawer",
-          name: "toast",
+          name: "drawer",
           component: () =>
             import(/* webpackChunkName: "show" */ "./views/components/drawer.vue"),
         },
+        {
+          path: "/show/popup",
+          name: "popup",
+          component: () =>
+            import(/* webpackChunkName: "show" */ "./views/components/popup.vue"),
+        }, {
+			path: "/show/svger",
+			name: "svger",
+			component: () =>
+			  import(/* webpackChunkName: "show" */ "./views/components/svger.vue"),
+		},
       ],
     },
   ],

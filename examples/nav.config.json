@@ -35,6 +35,14 @@
 			"desc": "drawer",
 			"name": "drawer",
 			"path": "/drawer"
+		}, {
+			"desc": "popup",
+			"name": "popup",
+			"path": "/popup"
+		}, {
+			"desc": "svger",
+			"name": "svger",
+			"path": "/svger"
 		}]
 	}]
 }

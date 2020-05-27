@@ -9,9 +9,11 @@
 import Button from './button';
 import Toast from './toast';
 import Drawer from './drawer';
+import Svger from './svger';
+import Popup from './popup';
 import './theme/index.scss';
 const components = [
-  Button, Drawer
+  Button, Drawer, Svger, Popup
 ]
 
 const install = function (Vue) {
@@ -28,6 +30,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Button,
   Toast
 }
